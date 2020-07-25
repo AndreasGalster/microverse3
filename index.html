@@ -9,13 +9,62 @@
   </head>
 
   <body>
-    <h1 id="title"></h1>
-    <p id="description"></p>
+    <h1 id="title">State of JS Survey</h1>
+    <p id="description">Please fill out this form to tell us more about your developer experience.</p>
+
     <form action="" id="survey-form">
-      <input type="text" id="name" required>
-      <input type="email" id="email">
-      <input type="number" id="number">
+      <input type="text" id="name" placeholder="Your name" required id="name-label">
+      <input type="email" id="email" placeholder="Your email address" required id="email-label">
+      <input type="number" id="number" placeholder="Your age" required id="number-label" min="5" max="10">
+
+      <select id="dropdown">
+        <option disabled selected value>Please select a tech stack</option>
+        <option value="Frontend">Frontend</option>
+        <option value="Backend">Backend</option>
+        <option value="Node.js">Node.js</option>
+        <option value="React.js">React.js</option>
+        <option value="Vue.js">Vue.js</option>
+      </select>
       
+
+      <p>How many years do you have experience with programming?</p>
+      <input id="1year" name="experiences" type="radio">
+      <label for="1year">1 year</label>
+
+      <input id="2year" name="experiences" type="radio">
+      <label for="2year">2 years</label>
+
+      <input id="3year" name="experiences" type="radio">
+      <label for="3year">3 years</label>
+
+      <input id="4year" name="experiences" type="radio">
+      <label for="4year">4 years</label>
+
+      <input id="5year" name="experiences" type="radio">
+      <label for="5year">5 years</label>
+
+      <input id="6year" name="experiences" type="radio">
+      <label for="6year">6 years</label>
+
+
+
+      <p>What are your developer soft-skills?</p>
+      <input id="patient" type="checkbox" value="patient">
+      <label for="patient">Patience</label>
+
+      <input id="teamwork" type="checkbox" value="teamwork">
+      <label for="teamwork">Teamwork</label>
+
+      <input id="openmindeded" type="checkbox" value="openmindeded">
+      <label for="openmindeded">Open-minded</label>
+
+
+      <p>Do you have any other comments?</p>
+      <textarea placeholder="Your additional comments" rows="7"></textarea>
+
+      <button id="submit">Submit your survey</button>
+
+
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
